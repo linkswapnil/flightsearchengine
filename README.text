@@ -1,7 +1,7 @@
 
 ================= RUNNING THE CODE ==================
 
-1. Navigate to the directory and run ‘nam install’. This will load all the dependencies required.
+1. Navigate to the directory and run ‘npm install’. This will load all the dependencies required.
 2. Open ‘searchEngine.html’	in browser. This will open the app in browser.
 
 =====================================================
