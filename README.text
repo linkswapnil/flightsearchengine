@@ -1,0 +1,24 @@
+
+================= RUNNING THE CODE ==================
+
+1. Navigate to the directory and run ‘nam install’. This will load all the dependencies required.
+2. Open ‘searchEngine.html’	in browser. This will open the app in browser.
+
+=====================================================
+
+
+================= VIEWING SEARCH RESULTS =============
+
+1. Use ‘Pune’  and ‘Delhi’ as ‘Origin CIty’ and ‘Destination City’.
+2. Use ’04/02/2017’ (4 Feb 2017) as ‘Departure day’ and ‘Return Day’.
+
+=======================================================
+
+================= RUNNING THE TESTS/SPECS ===================
+
+’./node_modules/karma/bin/karma start’ from commandLine.
+I have used ‘Karma’ as ‘test runner’ and all the test cases are written in ‘Jasmin’..
+
+==============================================================
+
+

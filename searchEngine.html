@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Search Engine</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<div id="container">
+    <div id="header">
+        <h2>Flight Search Engine</h2>
+    </div>
+    <div id="partittion">
+        <div id="left">
+            <div id="tabs">
+                <span class="tab active" id="oneWay">One Way</span>
+                <span class="tab" id="return">Return</span>
+            </div>
+            <div id="formContainer" class="container">
+                <section id="form">
+                    <div>
+                        <input data-validate="true" type="text" class="field" id="originCity" placeholder="Enter Origin City" size="40">
+                        <div class="errorBox"></div>
+                    </div>
+                    <div>
+                        <input data-validate="true" type="text" class="field" id="destinationCity" placeholder="Enter Destination City" size="40">
+                        <div class="errorBox"></div>
+                    </div>
+                    <div>
+                        <input data-validate="true" type="date" id="departureDate" class="field" placeholder="Departure date"  size="40">
+                        <div class="errorBox"></div>
+                    </div>
+                    <div>
+                        <input data-validate="true" type="date" id="returnDate" class="field hide" placeholder="Return date"  size="40">
+                        <div class="errorBox"></div>
+                    </div>
+                    <button class="btn" id="search" >Search</button>
+                </section>
+            </div>
+            <div id="filter" class="container">
+                <h3>
+                    Refine flight search
+                </h3>
+
+                <input id="range" type="range" size="40" max="13000" min="3000" step="1000" value="13000">
+                <div id="priceRange">
+                    <span id="min"> 3000 </span>
+                    <span id="max"> 13000 </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="right">
+            <div class="journeyDetails">
+                <div class="breadCrumb">
+                    <ul></ul>
+                </div>
+                <div class="journeyDates">
+                    <div class="departDate" id="breadCrumbDepartDate"> </div>
+                    <div class="returnDate" id="breadCrumbReturnDate"></div>
+                </div>
+                <div class="clear"> </div>
+            </div>
+            <ul class="resultList" id="flightInformation">
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="data/flightData.js"></script>
+<script type="text/javascript" src="js/formValidator.js"></script>
+<script type="text/javascript" src="js/util/dateHelper.js"></script>
+<script type="text/javascript" src="js/searchEngine.js"></script>
+</body>
+</html>

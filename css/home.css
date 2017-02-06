@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+}
+
+body {
+    font-family: Arial;
+}
+
+#container {
+    border: 1px solid #CCC;
+    padding: 10px;
+    margin: 10px
+}
+
+#header {
+    padding: 10px;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+#partittion {
+    width: 100%;
+}
+
+#left {
+    width: 30%;
+    border: 1px solid #CCC;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#search{
+    display: block;
+}
+
+.field{
+
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+    margin-bottom: 7px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+#tabs{
+    margin-top: 10px;
+    margin-bottom: -1px;
+}
+
+#tabs .tab {
+    cursor: alias;
+    border: 1px solid #CCC;
+    border-bottom: none;
+    padding: 10px;
+    font-size: 12px;
+    display: inline-block;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+}
+#tabs .active {
+    background: #fff;
+}
+
+.container{
+    border: 1px solid #CCC;
+}
+
+#form{
+    margin: 10px;
+
+}
+
+#filter{
+    padding: 10px;
+    margin-top: -1px;
+}
+#filter input {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#right {
+    width: 70%;
+    float: left;
+    padding: 10px 0 0 10px;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+.resultList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listContent {
+    float : left;
+    width : 70%
+}
+
+.imageContent {
+    float: right;
+    width : 30%
+}
+
+.resultList > li{
+    padding: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.oneWay,
+.twoWay {
+    float: left;
+    width: 50%;
+}
+
+.flightNo {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.flightRoute h4{
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #f5f5f5;
+    border: 1px solid #CCC;
+    color: #000;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+}
+.btn:hover {
+    background: #fff;
+}
+.imageContent .btn {
+    width: 100%;
+}
+
+.imageBox {
+    border: 1px solid #CCC;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+.journeyDetails {
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.journeyDates {
+    float: right;
+    font-size: 12px;
+    padding-right: 10px
+}
+.journeyDates > div {
+    margin-top: 5px
+}
+.journeyDates > div > span {
+    display: inline-block;
+    width: 40px;
+}
+.journeyDates > div:first-child {
+    margin:0
+}
+.breadCrumb {
+    float: left;
+    font-size: 14px;
+
+}
+
+.breadCrumb > ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0 10px;
+}
+
+.breadCrumb > ul > li{
+    display: inline-block;
+}
+.breadCrumb > ul > li:before {
+    content: ">";
+}
+.breadCrumb > ul > li:first-child:before {
+    display: none;
+}
+.time {
+    font-size: 12px;
+    margin-bottom: 8px
+}
+
+.error {
+    border: solid 1px #FD5B5B;
+    background-color: #FBD8D8;
+}
+
+.errorBox {
+    color: #ff0000;
+    border-color: #ff0000;
+    font-family: 'Droid Sans', arial, sans-serif;
+    font-size: 13px;
+    padding: 0px 0px 5px 5px;
+}
+
+#priceRange #max {
+    float: right;
+}
+
+@media screen and (max-width: 480px) {
+    #left {
+        width: 100%;
+    }
+    #partittion {
+        width: 100%;
+    }
+    #right{
+        width: 100%
+    }
+
+}
