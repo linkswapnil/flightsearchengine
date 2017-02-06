@@ -1,6 +1,3 @@
-/**
- * Created by bhalker on 31/01/17.
- */
 (function(){
 
 
